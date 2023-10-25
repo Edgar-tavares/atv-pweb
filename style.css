@@ -1,0 +1,128 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    background-color: #444;
+    padding: 10px;
+}
+
+.nav-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:last-child {
+    margin-right: 0;
+}
+
+.nav-button:hover {
+    background-color: #0056b3;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-panel {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.left-panel input[type="text"],
+.left-panel select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: 'Inter', sans-serif;
+}
+
+.action-button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.right-panel {
+    flex: 2;
+    padding: 20px;
+}
+
+.account-list {
+    list-style: none;
+    padding: 0;
+}
+
+.account-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    font-family: 'Inter', sans-serif;
+}
+
+.account-item button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.account-item button:hover {
+    background-color: #d43931;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
