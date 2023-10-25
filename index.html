@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gerenciador de Contas Bancárias</title>
+</head>
+<body>
+    <div class="container">
+        <header>Gerenciador de Contas Bancárias</header>
+        <nav>
+            <button class="nav-button" onclick="showAddForm()">Adicionar Conta</button>
+            <button class="nav-button" onclick="showBalance()">Ver Extrato/Saldo</button>
+        </nav>
+        <main>
+            <div class="left-panel" id="add-form">
+                <h2>Adicionar Conta</h2>
+                <input type="text" id="account-name" placeholder="Nome da conta">
+                <select id="account-type">
+                    <option value="corrente">Conta Corrente</option>
+                    <option value="poupanca">Conta Poupança</option>
+                    <option value="investimento">Conta de Investimento</option>
+                </select>
+                <button class="action-button" onclick="addAccount()">Adicionar Conta</button>
+            </div>
+            <div class="right-panel" id="account-list">
+                <h2>Extrato/Saldo</h2>
+                <ul class="account-list" id="account-items"></ul>
+                <div id="total-balance"></div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        &copy; 2023 Gerenciador de Contas Bancárias
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
